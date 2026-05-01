@@ -1,0 +1,201 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'poppins', sans-serif;
+}  
+
+body {
+    height: 100vh;
+    background:#F5F5DC ; 
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar {
+ display: flex;
+ align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+ justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.navbar .logo span {
+    color: #C06B3E;
+}
+
+.navbar .menu-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.navbar a {
+    color:#fff;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #C06B3E;
+}
+
+.kape1{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    padding: 0 20px;
+
+
+    background: url("kape1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.kape1 .content {
+    color:#fff;
+   max-width: 1200px;
+   width: 100%;
+ margin: 0 auto;
+}
+
+.kape1 .content h1{
+    font-size: 3rem;
+    max-width: 600px;
+}
+
+.kape1 .content p {
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.kape1 .content button {
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;   
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+}
+
+.kape1 .content button: hover {
+    color: #fff;
+    background: #C06B3E;
+}
+
+/* Menu Section Styling */
+.menu-section{
+    color:rgb(255, 255, 255)
+    background:var(white)
+}
+.menu-section .menu-list {
+display: flex;
+flex-wrap: wrap;
+gap: 110px;
+align-items: center;
+justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+}
+ .menu-section .menu-list .menu-item .menu-image {
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.menu-section .menu-list .menu-item .menu-image:hover {
+    transform: scale(1.03); /* subtle hover */
+}
+
+
+.menu-section .menu-list .menu-item .name{
+    margin: 12px 0;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:brown
+}
+
+.menu-section .menu-list .menu-item .text{
+    font-size: var(--font-size-m);
+    color:brown;
+}
+
+
+/* Responsive media query code for max width 1024px */
+@media screen and (max-width: 1024px) {
+    .menu-section .menu-list{
+        gap: 60px;
+    }
+
+.menu-section .menu-list .menu-item {
+     width: calc(100% / 3 - 60px);
+}
+
+}
+.about-us{
+    width: 80%;
+    margin: 40px auto 20px;
+    padding: 20px;
+    text-align: center;
+    background: #f7f2e7;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.about-us h3{
+    font-size: 16px;
+    color: #a52a2a;
+    margin-bottom: 10px;
+}
+
+.about-us p{
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 900px) {
+.navbar .menu-links {
+    position:fixed;
+    left: 0;
+    top: 0; 
+    flex-direction: column;
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    padding: 70px 40px 0;
+}
+
+.navbar a {
+ color: #000;
+
+}
+}
+
